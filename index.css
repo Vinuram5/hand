@@ -1,0 +1,147 @@
+body{
+    background-color: lightpink;
+}
+nav{
+    display: flex;
+    gap:30px;
+    margin-left: 600px;
+    margin-top: -50px;
+}
+h1{
+    margin-left: 20px;
+    padding-top: 10px;
+}
+h1:hover{
+    color: orange;
+}
+nav a{
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+}
+nav a:hover{
+    border: 1px solid blue;
+    background-color: blue;
+    border-radius: 3px;
+    color: white;
+}
+.container{
+    background: transparent;
+    background-color: rgba(240, 204, 204, 0.9);
+    backdrop-filter: blur(10px);
+    height: 50px;
+    margin-top: -15px;
+    border-radius: 20px;
+    position: sticky;
+    top:0;
+}
+h2{
+    margin-top: 300px;
+    margin-left: 150px;
+    font-size: 40px;
+    color:black;
+}
+img{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    margin-left: 800px;
+    margin-top: -280px;
+}
+.unix{
+    width: 450px;
+    height: 40px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    margin-left: 500px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+::placeholder{
+    font-size: 20px;
+}
+.i{
+    width: 45px;
+    height: 45px;
+    margin-top: -100px;
+    margin-left: 915px;
+}
+.login{
+    margin-left: 200px;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-top: -100px;
+}
+.l{
+    background-color:aqua;
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.r{
+    background-color:aqua;
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+#oops{
+    width: 50px;
+    height: 50px;
+    margin-left: 300px;
+    cursor: pointer;
+}
+@media(max-width:650px){
+    .oops{
+        display: block;
+        width: 90px;
+        height: 90px;
+        margin-left: 200px;
+        margin-top: 50px;
+        margin-right: 20px;
+    }
+    .container  #menu.active{
+            top: 0;
+    }
+    nav{
+        position: fixed;
+        left: -130%;
+        top: 140px;
+        gap:25px;
+        flex-direction: column;
+        background-color: cadetblue;
+        width: 110%;
+        text-align: center;
+        transition: 0,3s;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .unix{
+        margin-top: 250px;
+        width: 300px;
+        margin-left: 20px;
+    }
+    h2{
+        font-size: 22px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .l{
+        margin-left: -130px;
+        margin-top: 120px;
+    }
+    .pass{
+        margin-left: 25px;
+        margin-top: 10px;
+        width: 300px;
+        height: 300px;
+    }
+}
